@@ -1,2 +1,2 @@
-# ygkHomePage
-叶国康的个人主页
+# JingDongFinance
+仿京东金融APP
