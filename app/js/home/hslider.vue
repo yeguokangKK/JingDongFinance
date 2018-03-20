@@ -1,8 +1,8 @@
 <template lang="html">
-    <article class="">
-        <Slider :item="items" :cname="$style.slider"/>
-        <section class="$style.list">
-            <div class="$style.item" v-for="item in enters" :key="item.img">
+    <article>
+        <Slider :items="items" :cname="$style.slider"/>
+        <section :class="$style.list">
+            <div :class="$style.item" v-for="item in enters" :key="item.img">
                 <router-link :to="{ name: item.href }">
                     <img :src="item.img" :alt="item.title">
                     <h4>{{ item.title }}</h4>
@@ -30,10 +30,6 @@ export default {
             },
             {
                 href: "home",
-                src: "//img12.360buyimg.com/jrpmobile/jfs/t15889/87/2384955814/33715/50b5a382/5aab9de5N82a504c5.jpg?width=750&height=320",
-            },
-            {
-                href: "home",
                 src: "//img12.360buyimg.com/jrpmobile/jfs/t15754/56/2447393459/32827/e785366c/5aab9e09Nfb112b5e.jpg?width=750&height=320",
             }],
             enters: [
@@ -41,7 +37,8 @@ export default {
                     href: "home",
                     img: "//img12.360buyimg.com/jrpmobile/jfs/t3991/64/2521945388/12110/93c0139/58d1e462Ncf294123.png?width=132&height=132",
                     title: "优惠券",
-                }, {
+                },
+                {
                     href: "home",
                     img: "//img12.360buyimg.com/jrpmobile/jfs/t5590/252/875247023/17343/946aa72c/59224650N0f7ffc92.png?width=132&height=132",
                     title: "领红包",
@@ -50,6 +47,11 @@ export default {
                     href: "home",
                     img: "//img12.360buyimg.com/jrpmobile/jfs/t4393/329/2180608902/13217/c88c0cec/58ec9dcdN1534e2d7.png?width=132&height=132",
                     title: "抢钢镚",
+                },
+                {
+                    href: "home",
+                    img: "//img12.360buyimg.com/jrpmobile/jfs/t4618/115/2179710654/11347/bf520df/58ec9d84Nfd169001.png?width=132&height=132",
+                    title: "领京豆",
                 },
                 {
                     href: "home",
@@ -62,10 +64,14 @@ export default {
 }
 </script>
 
+
 <style lang="scss" module>
-  @import "../../css/element.scss"
+  @import "../../css/element.scss";
   .slider{
     margin-top:120px;
+    img{
+      width:100%;
+    }
   }
   .list{
     @include list(row);

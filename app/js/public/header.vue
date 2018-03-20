@@ -1,9 +1,9 @@
 <template lang="html">
-  <div class="$style.header">
-    <span class="$style.left">
-      <a href="#">注册</a>&nbsp;|&nbsp;<a href="#">登录</a>
+  <div :class="$style.header">
+    <span :class="$style.left">
+      <em>注册</em>&nbsp;|&nbsp;<em>登录</em>
     </span>
-    <btn class="$style.btnDownload">APP下载</btn>
+    <btn :class="$style.btnDownload">APP下载</btn>
   </div>
 </template>
 
