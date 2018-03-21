@@ -1,5 +1,5 @@
 <template lang="html">
-    <Panel title="新品推荐" :class="$style.panel">
+    <Panel title="众筹新品" :class="$style.panel">
         <section :class="$style.content">
             <div class="arrow">更多尖货></div>
             <Slider :options="options" :items="items" cname="product-slider"/>
@@ -18,22 +18,22 @@ export default {
         return {
             items: [{
                 href: "home",
-                src: "//img12.360buyimg.com/jrpmobile/jfs/t13963/267/2355123229/48850/254f797a/5a3c59aeN9cb550f6.jpg?width=335&height=421",
+                src: "//img12.360buyimg.com/jrpmobile/jfs/t17500/129/612741991/43773/b9be060d/5a9d02d3N79dd6e76.jpg?width=335&height=421",
             },
             {
-                href: "home",
-                src: "//img12.360buyimg.com/jrpmobile/jfs/t13021/306/1996997425/21953/bda69db3/5a2f6a17N9da099b1.jpg?width=335&height=421",
+                href: "money",
+                src: "//img12.360buyimg.com/jrpmobile/jfs/t19381/282/641433664/36503/a7084d81/5a9d031cN6daf7d1d.jpg?width=335&height=421",
             },
             {
-                href: "home",
-                src: "//img12.360buyimg.com/jrpmobile/jfs/t14125/310/1997192193/46667/3c910f8b/5a2f6a36Nad95b650.jpg?width=335&height=421",
+                href: "ious",
+                src: "//img12.360buyimg.com/jrpmobile/jfs/t18736/21/452113740/50445/b97274fb/5a7d5bc4N592e324e.jpg?width=335&height=421",
             },
             {
-                href: "home",
-                src: "//img12.360buyimg.com/jrpmobile/jfs/t15784/188/381232069/39444/8878571d/5a2f6a4aNbd5a574c.jpg?width=335&height=421",
+                href: "download",
+                src: "//img12.360buyimg.com/jrpmobile/jfs/t14935/5/2384445307/37843/697e3be2/5a9d0375N91173d42.jpg?width=335&height=421",
             }],
             options: {
-                slidesPerView: 2.3,
+                slidesPerView: 2.7,
                 spaceBetween: 30,
                 freeMode: true,
             },

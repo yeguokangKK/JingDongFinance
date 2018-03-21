@@ -2,6 +2,8 @@ import Vue from "vue"
 import Router from "vue-router"
 import Home from "../home/index.vue"
 import Money from "../money/index.vue"
+import Ious from "../ious/index.vue"
+import Download from "../special/download.vue"
 import "../../css/reset.scss"
 
 Vue.use(Router)
@@ -9,7 +11,7 @@ Vue.use(Router)
 export default new Router({
     routes: [
         {
-            path: "/home",
+            path: "/",
             name: "home",
             component: Home,
         },
@@ -17,6 +19,15 @@ export default new Router({
             path: "/money",
             name: "money",
             component: Money,
+        },
+        {
+            path: "/ious",
+            name: "ious",
+            component: Ious,
+        }, {
+            path: "/download",
+            name: "download",
+            component: Download,
         },
     ],
 })
