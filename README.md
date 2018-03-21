@@ -1,5 +1,5 @@
 # JingDongFinance
-仿京东金融触屏版,预览地址：https://jtoj.github.io/financeAPP/
+仿京东金融触屏版，预览地址：https://jtoj.github.io/financeAPP/
 
 ## 项目背景
 #### 1、接触移动端较少，想找一个项目练手
