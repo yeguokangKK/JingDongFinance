@@ -16,3 +16,4 @@
 ## 开发指南
 #### 1、下载项目后，执行：npm install (推荐淘宝镜像cnpm)
 #### 2、启动项目：npm start
+#### 3、打包压缩上线版本：npm run build
