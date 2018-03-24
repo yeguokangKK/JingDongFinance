@@ -2,11 +2,9 @@
     <Panel title="理财精选" :class="$style.panel">
         <section :class="$style.content">
             <dl :class="$style.item" v-for="item in items" :key="item.title">
-                <router-link :to="{ name: item.toPage}">
-                    <dt>{{ item.title }} <span :class="$style.red">{{ item.sub }}</span></dt>
-                    <dd>{{ item.rate }}</dd>
-                    <dd>{{ item.text }}</dd>
-                </router-link>
+                <dt>{{ item.title }} <span :class="$style.red">{{ item.sub }}</span></dt>
+                <dd>{{ item.rate }}</dd>
+                <dd>{{ item.text }}</dd>
             </dl>
         </section>
     </Panel>
@@ -25,28 +23,24 @@ export default {
                 sub: "90天可质押",
                 rate: "5.50%",
                 text: "历史年化结算利率",
-                toPage: "home",
             },
             {
                 title: "固收理财",
                 sub: "理财推荐",
                 rate: "5.80%",
                 text: "综合年化收益率",
-                toPage: "money",
             },
             {
                 title: "基智账户",
                 sub: "组合投资",
                 rate: "8%~10%",
                 text: "止盈年化收益率",
-                toPage: "ious",
             },
             {
                 title: "小白基金",
                 sub: "超短期",
                 rate: "5.00%",
                 text: "7日年化收益率",
-                toPage: "download",
             }],
         }
     },
