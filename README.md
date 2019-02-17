@@ -1,10 +1,10 @@
 # JingDongFinance
 仿京东金融触屏版，预览地址：https://jtoj.github.io/financeAPP/
+京东金融原版地址：https://m.jr.jd.com/spe/qyy/main/index.html?userType=67&sid=
 
 ## 项目背景
 #### 1、工作中开发移动端较少，想找一个项目练习
-#### 2、用Vue做SPA很快捷高效，也熟悉一下webpack的使用
-#### 3、选京东金融的原因：包含了较丰富的布局和组件，而且有触屏版，取图片素材方便快捷。而拉勾等只有手机APP和PC端
+#### 2、选京东金融的原因：包含了较丰富的布局和组件，而且有触屏版，取图片素材方便快捷。而拉勾等只有手机APP和PC端
 
 
 ## 技术说明
